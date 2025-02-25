@@ -1,5 +1,5 @@
 var creditsState = {
-    create: function() {
+    create: function () {
         background = new Background(game);
         background.create();
         this.returnButton = game.add.button(64, 64, 'back_button', this.goToMenu, this);
@@ -14,11 +14,21 @@ var creditsState = {
         });
         this.creatorName.anchor.setTo(0.5, 0.5);
 
-        this.musicCreator = game.add.text(game.world.centerX, 400, 'Music by:', {
+        this.updateCredits = game.add.text(game.world.centerX, 400, "Linpuss is Here!:", {
+            fill: '#424242'
+        });
+        this.updateCredits.anchor.setTo(0.5, 0.5);
+        this.updateCreditsName = game.add.text(game.world.centerX, 430, 'Update by K7stia', {
+            fill: '#fff',
+            fontSize: 48
+        });
+        this.updateCreditsName.anchor.setTo(0.5, 0.5);
+
+        this.musicCreator = game.add.text(game.world.centerX, 600, 'Music by:', {
             fill: '#424242'
         });
         this.musicCreator.anchor.setTo(0.5, 0.5);
-        this.musicCreatorName = game.add.text(game.world.centerX, 430, 'Oyvind Torvund', {
+        this.musicCreatorName = game.add.text(game.world.centerX, 630, 'Oyvind Torvund', {
             fill: '#fff',
             fontSize: 48
         });
@@ -26,7 +36,7 @@ var creditsState = {
 
     },
 
-    goToMenu: function() {
+    goToMenu: function () {
         game.state.start('menu');
     }
 };
