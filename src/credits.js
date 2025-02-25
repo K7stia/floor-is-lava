@@ -14,11 +14,11 @@ var creditsState = {
         });
         this.creatorName.anchor.setTo(0.5, 0.5);
 
-        this.updateCredits = game.add.text(game.world.centerX, 400, "Linpuss is Here!:", {
+        this.updateCredits = game.add.text(game.world.centerX, 400, "Linpuss is Here! – Update by:", {
             fill: '#424242'
         });
         this.updateCredits.anchor.setTo(0.5, 0.5);
-        this.updateCreditsName = game.add.text(game.world.centerX, 430, 'Update by K7stia', {
+        this.updateCreditsName = game.add.text(game.world.centerX, 430, 'K7stia', {
             fill: '#fff',
             fontSize: 48
         });
